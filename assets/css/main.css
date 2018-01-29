@@ -1,9 +1,30 @@
+/***************************公共样式***************************/
+*{
+    box-sizing: border-box;
+}
+html,body {
+    height: 100%;
+    background: #fff;
+    color: #333;
+}
+#__nuxt {
+    height: 100%;
+}
+#sign-template {
+    height: 100%;
+    background: #f1f1f1;
+}
+#default-template {
+    height: 100%;
+    padding-top: 56px;
+    background: #fff;
+}
 a,a:hover,a:focus {
     text-decoration: none!important;
     color: inherit!important;
 }
 input:focus {
-    outline: nonew;
+    outline: none;
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -14,3 +35,196 @@ ul,ol,dl {
     margin: 0;
     padding: 0;
 }
+.my-container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 992px) {
+    .my-container{
+        width: 960px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 1080px) {
+    .my-container{
+        width: 750px;
+        margin: 0 auto;
+    }
+}
+/***************************************首页布局*****************************************/
+
+.index{
+    padding-top: 30px;
+}
+.index .main{
+    padding-right: 0;
+}
+.index .aside{
+    padding: 0 0 0 4.16667%;
+}
+.index .main .banner {
+    margin-bottom: 35px;
+}
+.index .main .banner img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+}
+.index .main .recommend-collection {
+    margin-bottom: 10px;
+}
+.index .main .recommend-collection a {
+    display: inline-block;
+    min-height: 32px;
+    margin: 0 18px 18px 0;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+.index .main .recommend-collection .more-hot-collection {
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    line-height: 34px;
+    font-size: 14px;
+    background: none;
+    border: none;
+    color: #787878;
+}
+.index .main .split-line {
+    margin: 0 0 15px;
+    border-bottom: 1px solid #f0f0f0;
+}
+.index .main .recommend-collection a img {
+    width: 32px;
+    height: 32px;
+    vertical-align: bottom;
+}
+.index .main .recommend-collection a span {
+    font-size: 14px;
+    display: inline-block;
+    padding:0 10px;
+    line-height: 32px;
+}
+.index .aside .board img {
+    width: 100%;
+    margin-bottom: 6px;
+    border-radius: 4px;
+}
+.note-list {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.note-list li {
+    position: relative;
+    width: 100%;
+    padding: 0 0 17px 0;
+    margin: 0 0 17px 0;
+    border-bottom: 1px solid #ccc;
+    word-wrap: break-word;
+}
+.note-list li.have-img>.wrap-img{
+    position:absolute;
+    top:50%;
+    right:0;
+    margin-top:-60px;
+    width:150px;
+    height:120px;
+}
+.note-list li.have-img>.wrap-img img {
+    width:100%;
+    height:100%;
+    border-radius: 4px;
+    border:1px solid #f0f0f0;
+}
+.note-list li.have-img .content {
+    padding-right:160px;
+}
+.note-list .author {
+    margin-bottom: 14px;
+    font-size: 13px;
+}
+.note-list .author .avatar , .note-list .author .info {
+    display: inline-block;
+    vertical-align: middle;
+}
+.avatar {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.note-list .author .avatar {
+    margin: 0 10px 0 0 ;
+}
+.note-list .author .info .time {
+    color: #969696;
+    padding-left: 5px;
+}
+.note-list .title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 7px;
+    /*line-height: 30px;*/
+}
+.note-list .title:visited {
+    color: #969696;
+}
+.note-list .abstract {
+    font-size: 13px;
+    line-height: 24px;
+    margin:  0 0 7px 0;
+}
+.note-list .meta {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.note-list .meta .collection-tag {
+    color: #ea6f5a!important;
+    border: 1px solid #ea6f5a;
+    padding: 3px 6px;
+    margin-right: 10px;
+    border-radius: 4px;
+    transition: all ease-in .2s;
+}
+.note-list .meta .collection-tag:hover{
+    background-color: rgb(254,247,246);
+    border-color:rgb(236,97,73)
+}
+.note-list .meta .tag {
+    margin-right: 10px;
+    color: #b4b4b4!important;
+    transition: all ease-in .2s;
+}
+.note-list .meta .tag:hover {
+    color: rgb(120,120,120) !important;
+}
+.note-list .meta span {
+    color: #b4b4b4;
+}
+@media (max-width: 1080px) {
+    .note-list li.have-img>.wrap-img {
+        margin-top: -58px;
+        bottom: 40px;
+        width: 125px;
+        height: 100px;
+    }
+    .note-list li.have-img .content {
+        padding-right: 135px;
+    }
+}
+/***************************************文章页面布局*****************************************/
+
+/***************************************用户布局*****************************************/

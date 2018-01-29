@@ -1,0 +1,184 @@
+.sign {
+    height: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+.logo {
+    position: absolute;
+    top: 50px;
+    left: 46px;
+}
+.logo img {
+    width: 100px;
+}
+.main {
+    width: 400px;
+    margin: 50px auto 0;
+    padding: 50px 50px 30px ;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 0 8 rgba(0,0,0,.1);
+    display: inline-block;
+
+}
+.main .title {
+    margin: 0 auto 50px;
+    padding: 10px;
+    color: #939393;
+}
+.main .title h4 {
+    margin: 0;
+    font-size: 18px;
+}
+.main .title h4 a,.main .title h4 b {
+    padding: 10px;
+}
+.main .title h4 a.active {
+    font-weight: 700;
+    color: #ea6f5a!important;
+    border-bottom: 2px solid #ea6f5a;
+}
+.main .title h4 a:hover {
+
+    border-bottom: 2px solid #ea6f5a;
+}
+.main form {
+    margin: 0 0 30px;
+    color: #969696;
+}
+.main form .input-prepend {
+    position: relative;
+    width: 100%;
+}
+.main form .input-prepend input{
+    width: 100%;
+    height: 50px;
+    padding: 4px 12px 4px 35px;
+    border: 1px solid #c8c8c8;
+    border-bottom: none;
+    background-color: rgb(248,248,248);
+}
+.main form input.top-radius {
+    border-radius: 4px 4px 0 0 ;
+}
+.main form input.bottom-radius {
+    border-radius: 0 0 4px 4px ;
+    border-bottom: 1px solid #c8c8c8!important;
+}
+.main form .input-prepend i {
+    position: absolute;
+    color: #969696;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+}
+.main form .rememner {
+    float: left;
+    margin: 25px 0;
+}
+.main form .help {
+    float: right;
+    margin: 25px 0;
+}
+.main form>input {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+}
+.main .more-sign p{
+    font-size: 14px;
+    color: #b8b8b8;
+    position: relative;
+    margin-bottom: 20px;
+}
+.main .more-sign p:before {
+    content: "";
+    width: 60px;
+    border-bottom: 1px solid #b8b8b8;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+.main .more-sign p:after {
+    content: "";
+    width: 60px;
+    border-bottom: 1px solid #b8b8b8;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.main .more-sign ul {
+    margin-bottom: 20px;
+}
+.main .more-sign ul li {
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    margin: 0 5px;
+}
+.main .more-sign ul li.weibo {
+    background-color: #e05244;
+}
+.main .more-sign ul li.weixin {
+    background-color: #00bb29;
+}
+.main .more-sign ul li.qq {
+    background-color: #498ad5;
+}
+.main .more-sign ul li.other {
+    background: rgb(248,248,248);
+    color: #939393;
+}
+.main .more-sign ul li a {
+    width: 50px;
+    height: 50px;
+    display: block;
+    line-height: 50px;
+}
+.main .more-sign ul li a i {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.main form input.sign-up-btn {
+    margin-top: 20px;
+}
+.main form .sign-up-msg {
+    margin: 15px 0 ;
+    text-align: center;
+    font-size: 12px;
+}
+.main form .sign-up-msg a {
+    color: #3194d0!important;
+}
+.main form .ssm {
+    position: relative;
+}
+.main form .input-prepend .send-ssm {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    display: block;
+    font-size: 12px;
+    border-radius: 16px;
+    color:#fff!important;
+    opacity: .5;
+}
+@media (max-width: 768px) {
+    #sign-template {
+        background: #fff!important;
+    }
+    .logo {
+        display: none;
+    }
+    .sign {
+        background-color: white;
+    }
+    .main {
+        border: none;
+        box-shadow: none;
+        margin: 0 auto;
+    }
+}
