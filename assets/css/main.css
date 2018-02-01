@@ -192,6 +192,12 @@ ul,ol,dl {
     font-weight: 400;
 }
 .note-list .meta .collection-tag {
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
     color: #ea6f5a!important;
     border: 1px solid #ea6f5a;
     padding: 3px 6px;
@@ -225,6 +231,361 @@ ul,ol,dl {
         padding-right: 135px;
     }
 }
+/*阅读更多*/
+.index .main .load-more {
+    display: block;
+    width: 100%;
+    line-height: 20px;
+    text-align: center;
+    color: #fff!important;
+    background: #a5a5a5;
+    border-radius: 20px;
+    margin: 30px auto 60px;
+    padding: 10px 15px;
+    font-size: 15px;
+}
+/*底部*/
+.footer .footer-row {
+    font-size: 13px;
+    color: rgb(150,150,150);
+}
+/*推荐作者*/
+.recommend-author {
+    margin-bottom: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+.recommend-author .title {
+    text-align: left;
+    color: #969696;
+}
+.recommend-author .title .page-change {
+    float: right;
+    color: #969696;
+}
+.recommend-author .title .page-change i {
+    transition: eaes .2s;
+}
+.recommend-author .title .page-change:hover {
+    color: #777!important;
+}
+.recommend-author .list {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.recommend-author .list li {
+    margin-top: 15px;
+}
+.recommend-author .list li .avatar {
+    float: left;
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+}
+.recommend-author .list li .follow {
+    margin-top: 5px;
+    float: right;
+    font-size: 13px;
+    color: #42c02e!important;
+}
+.recommend-author .list li .name {
+    display: block;
+    padding-top: 5px;
+    margin-right: 60px;
+    font-size: 14px;
+}
+.recommend-author .list li p {
+    color: #969696;
+    font-size:12px ;
+}
+.recommend-author .find-more {
+    display: block;
+    width: 100%;
+    padding: 7px 7px 7px 12px;
+    color: #787878!important;
+    border: 1px solid #ccc;
+    background: #f7f7f7;
+    font-size: 13px;
+    border-radius: 4px;
+}
+.recommend-author .find-more i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.aside .download {
+    display: block;
+    width: 100%;
+    min-height: 70px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 7px 10px;
+    margin-bottom: 30px;
+}
 /***************************************文章页面布局*****************************************/
+.note {
+    position: relative;
+    padding-top: 10px;
+}
+.note .post {
+    width: 620px;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.note .post .article .title {
+    font-size: 34px;
+    font-weight: 700;
+    margin: 20px 0 0 ;
+    word-break: break-all;
+}
+.note .post .article .author {
+    margin: 30px 0 40px 0;
+}
+.note .post .article .author .avatar {
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+.note .post .article .author .info {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.note .post .article .author .info .name {
+    font-size: 16px;
+    margin-right: 5px;
+}
+.note .post .article .info .follow {
+    color: #fff!important;
+    background-color: #42c02e!important;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 0 7px 0px 7px;
+}
+.note .post .article .author .info .btn-sm span {
+    margin-left: 5px;
+}
+.note .post .article .following {
+    background: #fff;
+    color: #bbb!important;
+    background-color: #eee;
+    padding: 0 7px 0px 7px;
+    border-radius: 20px;
+}
+.note .post .article .author .meta {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #969696;
+}
+.note .post .article .author .meta span {
+    margin-right: 5px;
+}
+.note .post .article .author .info .btn-sm span {
+    margin-left: 5px;
+}
+/*文章内容*/
+.note .post .article .show-content {
+    font-size: 16px;
+    font-weight: 400;
+    word-break: break-word;
+    color: #2f2f2f;
+    line-height: 1.7;
+}
+.note .post .article .show-content p {
+    margin: 0 0 20px;
+}
+.note .post .article .show-foot {
+    margin-bottom: 30px;
+}
+.note .post .article .show-foot .notebook {
+    font-size: 12px;
+    color: #c8c8c8!important;
+}
+.note .post .article .show-foot .notebook i {
+    margin-right: 5px;
+}
+.note .post .article .show-foot .copyright {
+    float: right;
+    font-size: 12px;
+    color: #c8c8c8;
+}
+.note .post .article .follow-detail {
+    padding: 20px;
+    background: #f8f8f8;
+    border: 1px solid #e1e1e1;
+    border-radius:  4px;
+}
+.note .post .article .follow-detail .avatar {
+    width: 48px;
+    height: 48px;
+    float: left;
+    margin-right: 10px;
+}
+.note .post .article .follow-detail .btn {
+    box-shadow: none;
+    float: right;
+    width: 100px;
+    padding: 8px 0 ;
+    font-size: 16px;
+}
+.note .post .article .follow-detail .btn span {
+    margin-left: 5px;
+}
+.note .post .article .follow-detail .following {
+    background: none;
+}
+.note .post .article .follow-detail .title {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-right: 5px;
+}
+.note .post .article .follow-detail .info>i{
+    color: #3194d0;
+    font-size: 15px;
+}
+.note .post .article .follow-detail .info p {
+    color: #969696;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+.note .post .article .follow-detail .signature {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #969696;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.note .post .article .meta-bottom {
+    margin-top: 40px;
+    margin-bottom: 80px;
+    position: relative;
+}
+.note .post .article .meta-bottom .like-group:hover {
+    background: rgb(254,247,245);
+}
+.note .post .article .meta-bottom .like {
+    display: inline-block;
+}
+.note .post .article .meta-bottom .share-group {
+    float: right;
+}
+.note .post .article .meta-bottom .like .like-group {
+    border: 1px solid #ea6f5a;
+    padding: 13px 0 15px;
+    border-radius: 40px;
+}
+.note .post .article .meta-bottom .like .active {
+    background: orangered;
+}
+.note .post .article .meta-bottom .like-group .btn-like {
+    font-size: 19px;
+    display: inline-block;
+    color: #ea6f5a;
+}
+.note .post .article .meta-bottom .active .btn-like {
+    font-size: 19px;
+    display: inline-block;
+    color: #fff;
+}
+.note .post .article .meta-bottom .like-group .btn-like a {
+    padding: 18px 30px 18px 17px;
+}
+.note .post .article .meta-bottom .active .btn-like a {
+    padding: 18px 30px 18px 17px;
+}
+.note .post .article .meta-bottom .like-group .btn-like a i {
+    margin-right: 5px;
+}
+.note .post .article .meta-bottom .like-group .modal-wrap {
+    font-size: 18px;
+    display: inline-block;
+    /*border: 1px solid #ccc;*/
+    border-left: 1px solid #ea6f5a;
+    color: #ea6f5a;
+}
+.note .post .article .meta-bottom .active .modal-wrap {
+    font-size: 18px;
+    display: inline-block;
+    /*border: 1px solid #ccc;*/
+    border-left: 1px solid #fff;
+    color: #fff;
+}
+.note .post .article .meta-bottom .like-group .modal-wrap a{
+    padding: 18px 30px 18px 17px;
+}
+.note .post .article .meta-bottom .share-group {
+
+}
+.note .post .article .meta-bottom .share-group a {
+    display: inline-block;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    background: #fff;
+    margin-left: 5px;
+}
+.note .post .article .meta-bottom .share-group a:hover {
+    background: rgb(248,248,248);
+}
+.note .post .article .meta-bottom .share-group a i {
+    font-size: 25px;
+}
+.weibo {
+    color: red;
+}
+.weixin {
+    color: green;
+}
+.qq {
+    color: blue;
+}
+.note .post .article .meta-bottom .share-group .more-share {
+    width: auto;
+    line-height: 45px;
+    font-size: 14px;
+    padding: 4px 18px;
+    border-radius: 20px;
+    color: #969696!important;
+}
+.share-top {
+    position: absolute;
+    bottom: 60px;
+    right: -26px;
+    width: 150px;
+    font-size: 14px;
+    text-align: left;
+    background: #fff!important;
+}
+.share-top .three {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid #eee;
+    margin-left: 70px;
+}
+.share-top ul {
+    margin: 0!important;
+    border: 1px solid #eee;
+    box-shadow: 5px 5px 5px #eee;
+}
+.share-top ul li {
+
+    line-height: 30px;
+}
+.share-top ul li:hover {
+    background: #eee;
+}
+.share-top ul li i{
+    margin:0 10px 0 10px;
+}
 
 /***************************************用户布局*****************************************/
